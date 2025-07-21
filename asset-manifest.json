@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/E-commerce-App/static/css/main.5b7ffaea.css",
+    "main.js": "/E-commerce-App/static/js/main.9c7a072c.js",
+    "static/media/Lego Toys.jpg": "/E-commerce-App/static/media/Lego Toys.0af2cab5010bddffe892.jpg",
+    "static/media/Transformer Toys.jpg": "/E-commerce-App/static/media/Transformer Toys.1a94b024dfe8903d7291.jpg",
+    "static/media/HotWheels.jpg": "/E-commerce-App/static/media/HotWheels.258eca3110877354f047.jpg",
+    "static/media/Drone.webp": "/E-commerce-App/static/media/Drone.b0e79be59fcbeb9edecc.webp",
+    "static/media/Home Theatre.avif": "/E-commerce-App/static/media/Home Theatre.de5b1e9e4871aa6be68c.avif",
+    "static/media/RC car.webp": "/E-commerce-App/static/media/RC car.b810b38c78aa35fc755f.webp",
+    "static/media/Laptop.jpg": "/E-commerce-App/static/media/Laptop.75f5162f1c2bfc6b6b95.jpg",
+    "static/media/4K TV.avif": "/E-commerce-App/static/media/4K TV.c5a860f5109a498e0ec2.avif",
+    "static/media/Mouse&Keyboard.webp": "/E-commerce-App/static/media/Mouse&Keyboard.ec25313d23968932dfe6.webp",
+    "static/media/RAM.webp": "/E-commerce-App/static/media/RAM.3c9c4d2200a7a1236e8b.webp",
+    "static/media/Coat suit.webp": "/E-commerce-App/static/media/Coat suit.3a161650ae667944501c.webp",
+    "static/media/Shirts.jpg": "/E-commerce-App/static/media/Shirts.83db8420647f16d6d567.jpg",
+    "static/media/Charger.jpg": "/E-commerce-App/static/media/Charger.363771d8f480d659b0ad.jpg",
+    "static/media/T-shirt.webp": "/E-commerce-App/static/media/T-shirt.3c64ebb902dfa47473dc.webp",
+    "static/media/SSD.webp": "/E-commerce-App/static/media/SSD.c7a1ed629ca4fd0f8662.webp",
+    "static/media/Ethernet cable.jpg": "/E-commerce-App/static/media/Ethernet cable.f5c07965f0c75814f4f2.jpg",
+    "static/media/Wireless headphone.webp": "/E-commerce-App/static/media/Wireless headphone.71fa219a2f78932c4df6.webp",
+    "static/media/backgroundImage.webp": "/E-commerce-App/static/media/backgroundImage.52685335a4586bdd00b2.webp",
+    "index.html": "/E-commerce-App/index.html",
+    "main.5b7ffaea.css.map": "/E-commerce-App/static/css/main.5b7ffaea.css.map",
+    "main.9c7a072c.js.map": "/E-commerce-App/static/js/main.9c7a072c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b7ffaea.css",
+    "static/js/main.9c7a072c.js"
+  ]
+}
