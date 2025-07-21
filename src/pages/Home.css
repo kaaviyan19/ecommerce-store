@@ -1,0 +1,59 @@
+/* src/pages/Home.css */
+
+.home-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+}
+
+/* ✅ Top-centered hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem; /* Push down slightly from top */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: darkcyan;
+}
+
+/* Additional sections */
+.featured, .why-choose-us {
+  text-align: center;
+  padding: 2rem;
+}
+
+.why-choose-us ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.why-choose-us li {
+  margin: 0.5rem 0;
+}
