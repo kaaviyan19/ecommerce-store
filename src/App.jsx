@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // ✅ Changed to HashRouter
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -9,7 +9,6 @@ import Cart from './pages/Cart';
 import { CartProvider } from './context/CartContext';
 import './App.css';
 
-// ✅ Import background image from src/assets
 import backgroundImage from './assets/images/backgroundImage.webp';
 
 const App = () => {
