@@ -3,9 +3,9 @@ import React from 'react';
 import { useCart } from '../context/CartContext';
 
 const Cart = () => {
-  const { cart } = useCart();
+  const { cart, increaseQuantity, decreaseQuantity, removeFromCart } = useCart();
 
-  const total = cart.reduce((sum, item) => sum + item.price, 0);
+  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   return (
     <div style={{ padding: '20px' }}>
@@ -16,15 +16,27 @@ const Cart = () => {
       ) : (
         <>
           {cart.map((item, index) => (
-            <div key={index} style={{ marginBottom: '10px' }}>
+            <div key={index} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
               <img
                 src={item.image}
                 alt={item.name}
-                style={{ width: '60px', height: 'auto', marginRight: '10px' }}
+                style={{ width: '60px', height: '60px', marginRight: '10px' }}
               />
-              {item.name} — ₹{item.price.toLocaleString('en-IN')}
+              <div style={{ flex: 1 }}>
+                <strong>{item.name}</strong>
+                <p>
+                  ₹{item.price.toLocaleString('en-IN')} × {item.quantity} = ₹
+                  {(item.price * item.quantity).toLocaleString('en-IN')}
+                </p>
+              </div>
+              <div style={{ display: 'flex', gap: '8px' }}>
+                <button onClick={() => decreaseQuantity(item.id)}>-</button>
+                <button onClick={() => increaseQuantity(item.id)}>+</button>
+                <button onClick={() => removeFromCart(item.id)}>Remove</button>
+              </div>
             </div>
           ))}
+          <hr />
           <h3>Total: ₹{total.toLocaleString('en-IN')}</h3>
         </>
       )}

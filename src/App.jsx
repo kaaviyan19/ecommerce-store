@@ -9,14 +9,17 @@ import Cart from './pages/Cart';
 import { CartProvider } from './context/CartContext';
 import './App.css';
 
+// ✅ Import background image from src/assets
+import backgroundImage from './assets/images/backgroundImage.webp';
+
 const App = () => {
   return (
     <CartProvider>
       <Router>
-        {/* ✅ Full-page background wrapper */}
         <div
+          className="app-wrapper"
           style={{
-            backgroundImage: "url('/images/backgroundImage.webp')", // from public/images
+            backgroundImage: `url(${backgroundImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -25,19 +28,15 @@ const App = () => {
             flexDirection: 'column',
           }}
         >
-          <div className="app-wrapper">
-            <Navbar />
-
-            <div className="main-content">
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/products" element={<Products />} />
-                <Route path="/cart" element={<Cart />} />
-              </Routes>
-            </div>
-
-            <Footer />
+          <Navbar />
+          <div className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/cart" element={<Cart />} />
+            </Routes>
           </div>
+          <Footer />
         </div>
       </Router>
     </CartProvider>
