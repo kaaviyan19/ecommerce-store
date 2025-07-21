@@ -1,12 +1,8 @@
-// src/components/FeaturedProducts.jsx
 import React from 'react';
 import { useCart } from '../context/CartContext'; // ✅ useCart hook
-import headphoneImg from '../assets/images/Wireless headphone.webp';
-import tshirtImg from '../assets/images/T-shirt.webp';
-import graphicsCardImg from '../assets/images/Graphics Card.jpg';
 
 const FeaturedProducts = () => {
-  const { cart, addToCart } = useCart(); // ✅ include cart from context
+  const { cart, addToCart } = useCart();
 
   const products = [
     {
@@ -14,21 +10,21 @@ const FeaturedProducts = () => {
       name: 'Wireless Headphones',
       price: 2599,
       category: 'Electronics',
-      image: headphoneImg
+      image: require('../assets/images/Wireless headphone.webp'),
     },
     {
       id: 2,
       name: 'Men T-Shirt',
       price: 799,
       category: 'Clothing',
-      image: tshirtImg
+      image: require('../assets/images/T-shirt.webp'),
     },
     {
       id: 3,
       name: 'Graphics Card RTX 5090',
       price: 410999,
       category: 'Electronics',
-      image: graphicsCardImg
+      image: require('../assets/images/Graphics Card.jpg'),
     },
   ];
 
@@ -45,7 +41,7 @@ const FeaturedProducts = () => {
         }}
       >
         {products.map((product) => {
-          const inCart = cart.find((item) => item.id === product.id); // ✅ check if already in cart
+          const inCart = cart.find((item) => item.id === product.id);
 
           return (
             <div
@@ -81,7 +77,7 @@ const FeaturedProducts = () => {
                   border: 'none',
                   padding: '6px 12px',
                   cursor: inCart ? 'not-allowed' : 'pointer',
-                  borderRadius: '4px'
+                  borderRadius: '4px',
                 }}
               >
                 {inCart ? 'Added' : 'Add to Cart'}
