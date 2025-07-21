@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecommerce-store/static/css/main.5b7ffaea.css",
-    "main.js": "/ecommerce-store/static/js/main.c23d1735.js",
+    "main.js": "/ecommerce-store/static/js/main.b60c3274.js",
     "static/media/Lego Toys.jpg": "/ecommerce-store/static/media/Lego Toys.0af2cab5010bddffe892.jpg",
     "static/media/Transformer Toys.jpg": "/ecommerce-store/static/media/Transformer Toys.1a94b024dfe8903d7291.jpg",
     "static/media/HotWheels.jpg": "/ecommerce-store/static/media/HotWheels.258eca3110877354f047.jpg",
@@ -22,10 +22,10 @@
     "static/media/backgroundImage.webp": "/ecommerce-store/static/media/backgroundImage.52685335a4586bdd00b2.webp",
     "index.html": "/ecommerce-store/index.html",
     "main.5b7ffaea.css.map": "/ecommerce-store/static/css/main.5b7ffaea.css.map",
-    "main.c23d1735.js.map": "/ecommerce-store/static/js/main.c23d1735.js.map"
+    "main.b60c3274.js.map": "/ecommerce-store/static/js/main.b60c3274.js.map"
   },
   "entrypoints": [
     "static/css/main.5b7ffaea.css",
-    "static/js/main.c23d1735.js"
+    "static/js/main.b60c3274.js"
   ]
 }
